@@ -1,10 +1,11 @@
 import { GoArrowUpRight } from "react-icons/go";
-import { Tech } from "./components/Techs";
+import { Tech } from "./components/Tech";
+import { Work } from "./components/Work";
 
 export function App() {
   return (
-    <div className="mx-auto max-w-6xl">
-      <nav className="flex justify-between p-8 bg-slate-50">
+    <div className="mx-auto   overflow-y-scroll no-scrollbar">
+      <nav className="flex max-w-6xl mx-auto justify-between p-8 bg-slate-50">
         <a href="#" className="font-bold text-xl text-slate-900">Ana P</a>
         <ul className="flex gap-8 font-medium text-slate-500">
           <li><a href="#" className="hover:text-slate-800">Projetos</a></li>
@@ -12,7 +13,7 @@ export function App() {
         </ul>
       </nav>
 
-      <main className="p-8 flex flex-col justify-center items-center">
+      <main className="p-8 max-w-6xl mx-auto flex flex-col">
         <section className="flex flex-col gap-12 ">
           <div className="flex justify-between gap-32">
             <div className="flex flex-col gap-4">
@@ -24,13 +25,13 @@ export function App() {
               </h1>
               <div>
                 <p className="flex gap-1"> 
-                  Cursando Análise e Desenvolvimento de Sistemas na <a href="#" className="flex items-center underline">Estácio<GoArrowUpRight /></a>
+                  Cursando Análise e Desenvolvimento de Sistemas na <a href="#" className="flex items-center underline hover:text-slate-600">Estácio<GoArrowUpRight /></a>
                 </p>
                 <p className="flex gap-1"> 
-                  Estudante da <a href="#" className="flex items-center underline">Rocketseat<GoArrowUpRight /></a>
+                  Estudante da <a href="#" className="flex items-center underline hover:text-slate-600">Rocketseat<GoArrowUpRight /></a>
                 </p>
                 <p className="flex gap-1"> 
-                  Graduada em Design Gráfico na <a href="#" className="flex items-center underline">Estácio<GoArrowUpRight /></a>
+                  Graduada em Design Gráfico na <a href="#" className="flex items-center underline hover:text-slate-600">Estácio<GoArrowUpRight /></a>
                 </p>
               </div>
             </div>
@@ -49,39 +50,38 @@ export function App() {
           </div>
         </section>
 
-        <section>
-          <div>
-            <h2 className="text-3xl font-medium">Projetos</h2>
-            <p>quote aleatória</p>
-
-            <div>
-              <img 
-                src="https://s2-techtudo.glbimg.com/SSAPhiaAy_zLTOu3Tr3ZKu2H5vg=/0x0:1024x609/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/c/u/15eppqSmeTdHkoAKM0Uw/dall-e-2.jpg" 
-                alt="" 
-              />
-
-              <h2>Nome do projeto</h2>
-              <div>
-                <span>Tecnologias:</span>
-                <p>CSS-HTML</p>
-              </div>
-              <div>
-                <span>Projeto:</span>
-                <p>Pessoal</p>
-              </div>
-              <div>
-                <span>Função:</span>
-                <p>Desenvolvedor WEB</p>
-              </div>
+        <section className="mt-48">
+          <div className="grid grid-flow-col gap-12 justify-between mt-20 ">
+            <div className="w-64 ">
+              <h2 className="text-3xl font-medium">Projetos</h2>
+              <p>quote aleatória</p>
             </div>
 
-            <div>
-              <a href="">Repositório<GoArrowUpRight /></a>
-              <a href="">Projeto<GoArrowUpRight /></a>
+            <div className="bg-transparent flex flex-col gap-11 max-h-[856px] overflow-y-scroll no-scrollbar whitespace-nowrap">
+              <Work />
+              <Work />
+              <Work />
             </div>
+
           </div>
         </section>
       </main>
+
+      <footer className="bg-slate-800 text-slate-100 p-4">
+        <div className="flex max-w-6xl mx-auto justify-between text-sm">
+          <div>
+            <h3 className="text-lg font-bold">É um prazer ter você aqui!</h3>
+            <p>Esse site é melhor visualizado em desktops.</p>
+            <p>Tecnologias usadas: React.js, Tailwind CSS, Node.js.</p>
+            <p>Feito com amor 2024</p>
+          </div>
+
+          <div className="flex gap-7">
+            <a href="#" className="flex items-center underline hover:text-slate-300">Github<GoArrowUpRight /></a>
+            <a href="#" className="flex items-center underline hover:text-slate-300">Linkedin<GoArrowUpRight /></a>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
