@@ -1,0 +1,28 @@
+{
+  "works": [
+    {
+      "name": "Nome do projeto",
+      "technologies": "Javascript, React, Styled Components",
+      "project": "Desenvolvido durante o curso da rocketseat",
+      "function": "Desenvolvedor web, direção de arte",
+      "repositorie_link": "https://github.com/Nahblue?tab=repositories",
+      "project_link": "https://github.com/Nahblue?tab=repositories"
+    },
+    {
+      "name": "Nome do ",
+      "technologies": "Javascript, CSS, HTML",
+      "project": "Curso",
+      "function": "Desenvolvedor WEB",
+      "repositorie_link": "https://github.com/Nahblue?tab=repositories",
+      "project_link": "https://github.com/Nahblue?tab=repositories"
+    },
+    {
+      "name": "Nome",
+      "technologies": "Javascript, React, Styled Components",
+      "project": "Curso",
+      "function": "Desenvolvedor",
+      "repositorie_link": "https://github.com/Nahblue?tab=repositories",
+      "project_link": "https://github.com/Nahblue?tab=repositories"
+    }
+  ]
+}
