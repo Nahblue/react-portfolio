@@ -24,5 +24,13 @@
       "repositorie_link": "https://github.com/Nahblue?tab=repositories",
       "project_link": "https://github.com/Nahblue?tab=repositories"
     }
+  ],
+
+  "techs": [
+    "Javascript",
+    "React",
+    "Tailwind",
+    "Styled Components",
+    "Node.js"
   ]
 }
