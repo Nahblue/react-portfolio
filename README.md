@@ -1,8 +1,16 @@
-# React + Vite
+# Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto criado usando React, Javascript, Tailwind CSS e Framer Motion.
 
-Currently, two official plugins are available:
+<img alt="Light Mode" src="https://i.imgur.com/yAoR9n5.png" width="80%">
+<img alt="Dark Mode" src="https://i.imgur.com/Z4u1rfU.png" width="80%">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# Projeto
+
+[Projeto Online]()
+
+
+---
+
+Feito com ♥ by Nahblue 😋
