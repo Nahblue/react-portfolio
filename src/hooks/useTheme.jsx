@@ -1,19 +1,20 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext()
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(getInitialTheme())
 
-
   function getInitialTheme() {
     const savedTheme = localStorage.getItem('theme')
+
     if (savedTheme) {
       return savedTheme
     }
    
     const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
     return userPrefersDark ? 'dark' : 'light'
+
   }
 
   useEffect(() => {
@@ -27,7 +28,7 @@ export function ThemeProvider({ children }) {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
 
     const handleChange = () => {
-      setTheme(mediaQuery.matches ? 'dark' : 'light');
+      setTheme(mediaQuery.matches ? 'dark' : 'light')
     }
 
     mediaQuery.addEventListener('change', handleChange)
@@ -35,7 +36,7 @@ export function ThemeProvider({ children }) {
     return () => {
       mediaQuery.removeEventListener('change', handleChange)
     }
-  },)
+  }, [])
 
   return (
     <ThemeContext.Provider value={{ theme }}>

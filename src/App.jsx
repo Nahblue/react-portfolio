@@ -4,7 +4,6 @@ import { Work } from "./components/Work";
 
 import { motion } from "framer-motion";
 
-
 import data from './data/data.json';
 import { Navigation } from "./components/Navigation";
 
@@ -16,7 +15,7 @@ export function App() {
     <div className="mx-auto w-full h-screen overflow-y-scroll no-scrollbar relative scroll-smooth">
       <div id="home" />
       <header 
-        className="bg-slate-50 dark:bg-slate-950 sticky top-0 z-10"
+        className="bg-slate-50 dark:bg-gray-950 sticky top-0 z-10"
       >
         <Navigation />
       </header>
@@ -81,7 +80,6 @@ export function App() {
               />
           
             </div>
-          
 
             <div className="flex flex-col gap-6">
               <h2 className="text-2xl md:text-3xl font-medium">Skills</h2>
@@ -97,7 +95,7 @@ export function App() {
 
         <section 
           id="projects"
-          className="w-full bg-slate-100 dark:bg-slate-900 py-9 px-6 md:px-16 lg:p-9"
+          className="w-full bg-slate-100 dark:bg-gray-900 py-9 px-6 md:px-16 lg:p-9"
         >
           <motion.div 
             className="max-w-[950px] mx-auto" 
@@ -110,7 +108,7 @@ export function App() {
               <div className="lg:relative">
                 <div className="w-64 lg:sticky lg:top-32">
                   <h2 className="text-2xl md:text-3xl font-medium">Projetos</h2>
-                  <p className="text-sm md:text-base">quote aleatória</p>
+                  <p className="text-xs md:text-sm mt-4">“Qualquer tecnologia suficientemente avançada é equivalente à mágica”. Arthur C. Clarke.</p>
                 </div>
               </div>
 
@@ -131,8 +129,8 @@ export function App() {
           <div>
             <h3 className="text-base font-medium md:text-lg md:font-bold">É um prazer ter você aqui!</h3>
             <p className="text-xs md:text-sm">Esse site é melhor visualizado em desktops.</p>
-            <p className="text-xs md:text-sm">Tecnologias usadas: React.js, Tailwind CSS.</p>
-            <p className="text-xs md:text-sm">Feito com amor ©2024</p>
+            <p className="text-xs md:text-sm">Tecnologias usadas: React.js, Javascript, Tailwind CSS, Vite, Framer Motion.</p>
+            <p className="text-xs md:text-sm">Feito com amor. © 2024</p>
           </div>
 
           <div className="flex gap-7">
