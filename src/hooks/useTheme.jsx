@@ -13,7 +13,12 @@ export function ThemeProvider({ children }) {
     }
    
     const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    return userPrefersDark ? 'dark' : 'light'
+
+    if (userPrefersDark) {
+      return 'dark'
+    } else {
+      return 'light'
+    }
 
   }
 
@@ -21,7 +26,10 @@ export function ThemeProvider({ children }) {
     localStorage.setItem('theme', theme)
 
     document.documentElement.classList.remove('light', 'dark')
-    document.documentElement.classList.add(theme)
+
+    if (theme === 'dark') {
+      document.documentElement.classList.add(theme)
+    }
   }, [theme])
 
   useEffect(() => {
