@@ -19,12 +19,10 @@ export function ThemeProvider({ children }) {
     } else {
       return 'light'
     }
-
   }
 
   useEffect(() => {
     localStorage.setItem('theme', theme)
-
     document.documentElement.classList.remove('light', 'dark')
 
     if (theme === 'dark') {
