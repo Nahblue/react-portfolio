@@ -1,15 +1,22 @@
 import { GoArrowUpRight } from "react-icons/go";
 
-export function Work({ data }) {
+export function Work({ data, handleModal }) {
+
+  function handleImageClick() {
+    const dataIMG = data.thumb
+    
+    handleModal(dataIMG)
+  }
 
   return (
     <div className="flex flex-col gap-3 md:gap-5">
       <img
         src={data.thumb}
         alt="Imagem do projeto"
-        className="max-w-xl max-h-96 rounded-sm object-cover"
+        className="max-w-xl max-h-96 rounded-sm object-cover cursor-pointer"
+        onClick={handleImageClick}
       />
-
+      
       <h2 className="text-2xl md:text-4xl font-medium">{data.name}</h2>
 
       <div className="flex flex-col gap-2">

@@ -1,15 +1,30 @@
 import { GoArrowUpRight } from "react-icons/go";
+import { Navigation } from "./components/Navigation";
 import { Tech } from "./components/Tech";
 import { Work } from "./components/Work";
+import { Modal } from "./components/Modal";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import data from './data/data.json';
-import { Navigation } from "./components/Navigation";
 
 export function App() {
   const techs = data.techs
   const works = data.works
+
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [ modalIMG, setModalIMG ] = useState()
+
+  function handleModal (dataIMG) {
+    setModalIMG(dataIMG)
+
+    if (!isModalOpen) {
+      setIsModalOpen(true)
+    } else {
+      setIsModalOpen(false)
+    }
+  }
 
   return (
     <div className="mx-auto w-full h-screen overflow-y-scroll no-scrollbar relative scroll-smooth">
@@ -114,7 +129,7 @@ export function App() {
 
               <div className="bg-transparent flex flex-col gap-11">
                 {works.map((work) => {
-                  return <Work data={work} key={work.name} />
+                  return <Work data={work} key={work.name} handleModal={handleModal} />
                 })}
                 
               </div>
@@ -123,6 +138,8 @@ export function App() {
           </motion.div>
         </section>
       </main>
+
+      { isModalOpen && <Modal isModalOpen={isModalOpen} handleModal={handleModal} image={modalIMG} /> }
 
       <footer className="bg-slate-800 text-slate-100 p-6 md:py-6 md:px-9 lg:px-6">
         <div className="flex flex-col gap-6 md:flex-row md:gap-0 max-w-6xl mx-auto justify-between">
