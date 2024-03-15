@@ -1,7 +1,7 @@
 {
   "works": [
     {
-      "name": "Movie Notes",
+      "name": "Rocket Movies",
       "thumb": "https://camo.githubusercontent.com/38d91d323262941701269e165106f14434cb1932d7e25f25691bb9967373c85b/68747470733a2f2f692e696d6775722e636f6d2f71736a565261542e706e67",
       "technologies": "React, Javascript, Styled Components, Vite.",
       "project": "Desenvolvido durante o curso da Rocketseat.",

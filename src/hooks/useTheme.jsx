@@ -23,7 +23,7 @@ export function ThemeProvider({ children }) {
 
   useEffect(() => {
     localStorage.setItem('theme', theme)
-    document.documentElement.classList.remove('light', 'dark')
+    document.documentElement.classList.remove('dark')
 
     if (theme === 'dark') {
       document.documentElement.classList.add(theme)
