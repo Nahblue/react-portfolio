@@ -41,7 +41,7 @@ export function Work({ data, handleModal }) {
         <a
           target="_blank"
           href={data.repositorie_link}
-          className="text-sm md:text-base flex justify-center items-center underline hover:text-slate-500 dark:hover:text-slate-300"
+          className="text-sm md:text-base flex justify-center items-center font-medium hover:underline hover:text-slate-500 dark:hover:text-slate-300"
         >
           Repositório
           <GoArrowUpRight />
@@ -49,7 +49,7 @@ export function Work({ data, handleModal }) {
         <a
           target="_blank"
           href={data.project_link}
-          className="text-sm md:text-base flex justify-center items-center underline hover:text-slate-500 dark:hover:text-slate-300"
+          className="text-sm md:text-base flex justify-center items-center font-medium hover:underline hover:text-slate-500 dark:hover:text-slate-300"
         >
           Projeto
           <GoArrowUpRight />

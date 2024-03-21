@@ -3,6 +3,7 @@ import { Navigation } from "./components/Navigation";
 import { Tech } from "./components/Tech";
 import { Work } from "./components/Work";
 import { Modal } from "./components/Modal";
+import { Footer } from "./components/Footer";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -59,7 +60,7 @@ export function App() {
                     <a 
                       href="https://estacio.br/" 
                       target="_blank" 
-                      className="flex items-center underline hover:text-slate-600 dark:hover:text-slate-300"
+                      className="flex items-center font-medium hover:underline hover:text-slate-600 dark:hover:text-slate-300"
                     >
                       Estácio<GoArrowUpRight />
                     </a>
@@ -70,7 +71,7 @@ export function App() {
                     <a 
                       href="https://www.rocketseat.com.br/" 
                       target="_blank" 
-                      className="flex items-center underline hover:text-slate-600 dark:hover:text-slate-300"
+                      className="flex items-center font-medium hover:underline hover:text-slate-600 dark:hover:text-slate-300"
                     >
                       Rocketseat<GoArrowUpRight />
                     </a>
@@ -81,7 +82,7 @@ export function App() {
                     <a 
                       href="https://estacio.br/" 
                       target="_blank" 
-                      className="flex items-center underline hover:text-slate-600 dark:hover:text-slate-300"
+                      className="flex items-center font-medium hover:underline hover:text-slate-600 dark:hover:text-slate-300"
                     >
                       Estácio<GoArrowUpRight />
                     </a>
@@ -141,21 +142,7 @@ export function App() {
 
       { isModalOpen && <Modal isModalOpen={isModalOpen} handleModal={handleModal} image={modalIMG} /> }
 
-      <footer className="bg-slate-800 text-slate-100 p-6 md:py-6 md:px-9 lg:px-6">
-        <div className="flex flex-col gap-6 md:flex-row md:gap-0 max-w-6xl mx-auto justify-between">
-          <div>
-            <h3 className="text-base font-medium md:text-lg md:font-bold">É um prazer ter você aqui!</h3>
-            <p className="text-xs md:text-sm">Esse site é melhor visualizado em desktops.</p>
-            <p className="text-xs md:text-sm">Tecnologias usadas: React.js, Javascript, Tailwind CSS, Vite, Framer Motion.</p>
-            <p className="text-xs md:text-sm">Feito com amor. © 2024</p>
-          </div>
-
-          <div className="flex gap-7">
-            <a href="https://github.com/Nahblue" target="_blank" className="flex text-sm items-center underline hover:text-slate-300 ">Github<GoArrowUpRight /></a>
-            <a href="https://www.linkedin.com/in/ana-paula-costa-039b1181/" target="_blank" className="flex text-sm items-center underline hover:text-slate-300">Linkedin<GoArrowUpRight /></a>
-          </div>
-        </div>
-      </footer>
+      <Footer />             
     </div>
   )
 }

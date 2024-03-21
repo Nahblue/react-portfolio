@@ -25,5 +25,5 @@ export function Modal({ isModalOpen, handleModal, image }) {
         </motion.div>
       )}
     </AnimatePresence>
-  );
-};
+  )
+}
