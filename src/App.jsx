@@ -14,17 +14,17 @@ export function App() {
   const techs = data.techs
   const works = data.works
 
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [ isModalOpen, setIsModalOpen ] = useState(false)
   const [ modalIMG, setModalIMG ] = useState()
 
-  function handleModal (dataIMG) {
-    setModalIMG(dataIMG)
+  function handleModal (workIMG) {
+    setModalIMG(workIMG)
 
-    if (!isModalOpen) {
-      setIsModalOpen(true)
-    } else {
-      setIsModalOpen(false)
+    if (isModalOpen) {
+      return setIsModalOpen(false)
     }
+    
+    return setIsModalOpen(true)
   }
 
   return (
@@ -48,6 +48,7 @@ export function App() {
             <div className="mt-9 flex justify-between gap-32">
               <div className="flex flex-col gap-6 md:gap-4">
                 <span className="text-sm md:text-base">Olá, eu sou</span>
+
                 <h1 className="text-3xl md:text-6xl font-medium max-w-100">
                   Ana Paula, <br />
                   desenvolvedora <br />
@@ -89,12 +90,12 @@ export function App() {
                   </p>
                 </div>
               </div>
+
               <img 
                 src="https://github.com/Nahblue.png" 
                 alt="Ana Paula image" 
                 className="w-64 h-64 rounded-full hidden lg:block" 
               />
-          
             </div>
 
             <div className="flex flex-col gap-6">
@@ -130,11 +131,10 @@ export function App() {
 
               <div className="bg-transparent flex flex-col gap-11">
                 {works.map((work) => {
-                  return <Work data={work} key={work.name} handleModal={handleModal} />
+                  return <Work works={work} key={work.name} handleModal={handleModal} />
                 })}
                 
               </div>
-
             </div>
           </motion.div>
         </section>

@@ -1,5 +1,4 @@
-import { GoArrowUpRight } from "react-icons/go";
-import { GoHeartFill } from "react-icons/go";
+import { GoArrowUpRight, GoHeartFill  } from "react-icons/go";
 
 export function Footer() {
   return(
@@ -7,10 +6,9 @@ export function Footer() {
       <div className="flex flex-col gap-6 md:flex-row md:gap-0 max-w-6xl mx-auto justify-between">
         <div>
           <h3 className="text-base font-medium md:text-lg md:font-bold">É um prazer ter você aqui!</h3>
-          <p className="text-xs md:text-sm">Esse site é melhor visualizado em desktops.</p>
+          <p className="text-xs md:text-sm">Esse site é melhor visualizado em desktops. © 2024</p>
           <p className="text-xs md:text-sm">Tecnologias usadas: React.js, Javascript, Tailwind CSS, Vite, Framer Motion.</p>
           <p className="text-xs md:text-sm flex items-center gap-1">Feito com amor <GoHeartFill />.</p>
-          <p className="text-xs md:text-sm flex items-center gap-1">© 2024</p>
         </div>
 
         <div className="flex gap-7">

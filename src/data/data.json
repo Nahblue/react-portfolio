@@ -2,39 +2,39 @@
   "works": [
     {
       "name": "Rocket Movies",
-      "thumb": "https://camo.githubusercontent.com/38d91d323262941701269e165106f14434cb1932d7e25f25691bb9967373c85b/68747470733a2f2f692e696d6775722e636f6d2f71736a565261542e706e67",
+      "image": "https://camo.githubusercontent.com/38d91d323262941701269e165106f14434cb1932d7e25f25691bb9967373c85b/68747470733a2f2f692e696d6775722e636f6d2f71736a565261542e706e67",
       "technologies": "React, Javascript, Styled Components, Vite.",
       "project": "Desenvolvido durante o curso da Rocketseat.",
-      "function": "Desenvolvedor Fullstack",
-      "repositorie_link": "https://github.com/Nahblue/reactjs-movie-notes?tab=readme-ov-file",
-      "project_link": "https://reactjs-movie-notes.vercel.app/"
+      "myFunction": "Desenvolvedor Fullstack",
+      "repositoryLink": "https://github.com/Nahblue/reactjs-movie-notes?tab=readme-ov-file",
+      "projectLink": "https://reactjs-movie-notes.vercel.app/"
     },
     {
       "name": "Expert Notes",
-      "thumb": "https://camo.githubusercontent.com/f25468d91a051b06eb9d5e1d34cbef76a44e510776b45b397e775338a2270341/68747470733a2f2f692e696d6775722e636f6d2f733335674a6c612e706e67",
+      "image": "https://camo.githubusercontent.com/f25468d91a051b06eb9d5e1d34cbef76a44e510776b45b397e775338a2270341/68747470733a2f2f692e696d6775722e636f6d2f733335674a6c612e706e67",
       "technologies": "React, Typescript, Tailwind, Vite, API Speech Recording.",
       "project": "Desenvolvido durante evento NLW da Rocketseat.",
-      "function": "Desenvolvedor Front-end",
-      "repositorie_link": "https://github.com/Nahblue/nlw-expert-react?tab=readme-ov-file",
-      "project_link": "https://nlw-expert-react-chi.vercel.app/"
+      "myFunction": "Desenvolvedor Front-end",
+      "repositoryLink": "https://github.com/Nahblue/nlw-expert-react?tab=readme-ov-file",
+      "projectLink": "https://nlw-expert-react-chi.vercel.app/"
     },
     {
       "name": "Focus Times",
-      "thumb": "https://camo.githubusercontent.com/f5303aefd85cff85627bc2f506665540868c6433b03479429b9defa27fab59ab/68747470733a2f2f692e696d6775722e636f6d2f63547665656f352e706e67",
+      "image": "https://camo.githubusercontent.com/f5303aefd85cff85627bc2f506665540868c6433b03479429b9defa27fab59ab/68747470733a2f2f692e696d6775722e636f6d2f63547665656f352e706e67",
       "technologies": "Javascript, CSS, HTML.",
       "project": "Desenvolvido durante o curso da Rocketseat.",
-      "function": "Desenvolvedor Front-end",
-      "repositorie_link": "https://github.com/Nahblue/js-focus-timer-2?tab=readme-ov-file",
-      "project_link": "https://nahblue.github.io/js-focus-timer-2/"
+      "myFunction": "Desenvolvedor Front-end",
+      "repositoryLink": "https://github.com/Nahblue/js-focus-timer-2?tab=readme-ov-file",
+      "projectLink": "https://nahblue.github.io/js-focus-timer-2/"
     },
     {
       "name": "Pokédex",
-      "thumb": "https://camo.githubusercontent.com/c093ca52d7ee8d76cc3fc16b6df8ddf6e0d5a27b6fa95ef5a3e1f714b1c76098/68747470733a2f2f692e696d6775722e636f6d2f484e6f797545532e706e67",
+      "image": "https://camo.githubusercontent.com/c093ca52d7ee8d76cc3fc16b6df8ddf6e0d5a27b6fa95ef5a3e1f714b1c76098/68747470733a2f2f692e696d6775722e636f6d2f484e6f797545532e706e67",
       "technologies": "Javascript, CSS, HTML, Pokeapi.",
       "project": "Desenvolvido durante o curso de Javascript da DIO.",
-      "function": "Desenvolvedor Fullstack",
-      "repositorie_link": "https://github.com/Nahblue/js-developer-pokedex?tab=readme-ov-file",
-      "project_link": "https://js-developer-pokedex-beta.vercel.app/"
+      "myFunction": "Desenvolvedor Fullstack",
+      "repositoryLink": "https://github.com/Nahblue/js-developer-pokedex?tab=readme-ov-file",
+      "projectLink": "https://js-developer-pokedex-beta.vercel.app/"
     }
   ],
 

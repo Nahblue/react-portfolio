@@ -3,7 +3,7 @@ import { createContext, useState, useEffect } from 'react';
 const ThemeContext = createContext()
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(getInitialTheme())
+  const [ theme, setTheme ] = useState(getInitialTheme())
 
   function getInitialTheme() {
     const savedTheme = localStorage.getItem('theme')
@@ -16,9 +16,9 @@ export function ThemeProvider({ children }) {
 
     if (userPrefersDark) {
       return 'dark'
-    } else {
-      return 'light'
     }
+      
+    return 'light'
   }
 
   useEffect(() => {
