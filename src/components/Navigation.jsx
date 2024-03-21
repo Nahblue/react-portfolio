@@ -7,7 +7,7 @@ export function Navigation() {
 
       <ul className="flex gap-8 font-medium text-slate-500 dark:text-slate-200">
         <li><a href="#projects" className="hover:text-slate-800 dark:hover:text-slate-300">Projetos</a></li>
-        <li><a href="https://drive.google.com/file/d/14IrY_hxt6xNZp0O4cnsskrEXZSdgmPwn/view?usp=sharing" target="_blank" className="flex justify-center items-center hover:text-slate-800 dark:hover:text-slate-300">CV <GoArrowUpRight /></a></li>
+        <li><a href="https://drive.google.com/file/d/1aqfFZwdBh_81Kj_4puIkmzKAuI8_x_QC/view?usp=sharing" target="_blank" className="flex justify-center items-center hover:text-slate-800 dark:hover:text-slate-300">CV <GoArrowUpRight /></a></li>
       </ul>
     </nav>
   )
