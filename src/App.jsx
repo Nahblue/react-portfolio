@@ -52,7 +52,7 @@ export function App() {
                 <h1 className="text-3xl md:text-6xl font-medium max-w-100">
                   Ana Paula, <br />
                   desenvolvedora <br />
-                  front-end
+                  fullstack
                 </h1>
 
                 <div className="flex flex-col gap-2 md:text-base md:gap-0">
