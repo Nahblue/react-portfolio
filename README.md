@@ -8,7 +8,7 @@ Projeto criado usando React, Javascript, Tailwind CSS e Framer Motion.
 
 # Projeto
 
-[Projeto Online](https://react-portfolio-gamma-drab.vercel.app/)
+[Projeto Online](https://ananb-portfolio.vercel.app/)
 
 
 ---
