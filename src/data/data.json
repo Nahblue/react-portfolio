@@ -48,6 +48,9 @@
     "Express.js",
     "Prisma",
     "Knex.js",
-    "Next.js"
+    "Next.js",
+    "Nest JS",
+    "React Hook Form",
+    "TanStack Query",
   ]
 }
